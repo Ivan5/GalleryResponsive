@@ -1,7 +1,7 @@
 body{
     background: #444;
     margin: 0;
-    font-family: monospace;
+    font-family: 'Lato', sans-serif;
 }
 
 h1{
@@ -35,10 +35,15 @@ h1{
 /*Estilos del modal*/
 
 .modal{
-    display: none;
+    position: absolute;
+    top: -100%;
+    visibility: hidden;
+    opacity: 0;
 }
 .modal:target {
-    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.8s;
     position: fixed;
     background: rgba(0,0,0,0.8);
     top: 0;
