@@ -33,7 +33,12 @@ h1{
 }
 
 /*Estilos del modal*/
+
 .modal{
+    display: none;
+}
+.modal:target {
+    display: block;
     position: fixed;
     background: rgba(0,0,0,0.8);
     top: 0;
